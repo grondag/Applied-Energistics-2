@@ -93,10 +93,6 @@ public class QuadRotator implements RenderContext.QuadTransform {
             }
         }
 
-        // FIXME FABRIC: Wait for Grondags response about this one
-        MutableQuadViewImpl quadImpl = (MutableQuadViewImpl) quad;
-        quadImpl.lightFace(rotation.rotate(quad.lightFace()));
-
         // Transform the nominal face, setting the cull face will also overwrite the
         // nominialFace,
         // hence saving both first and the order here.
